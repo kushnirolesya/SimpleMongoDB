@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfSocialNetwork.News"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSocialNetwork"
+        mc:Ignorable="d"
+        Title="News" Height="600" Width="350">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#ffd19c" Offset="0"/>
+                <GradientStop Color="#ffb442" Offset="0.05"/>
+                <GradientStop Color="#ffd19c" Offset="0.252"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Width="60" Height="29" Click="Back" FontFamily="Viner Hand ITC" Background="#FFFFB93F"/>
+        <DataGrid HorizontalAlignment="Left" Height="460" Margin="22,57,0,0" VerticalAlignment="Top" Width="295" Background="#FFFFD975"/>
+        <Label Content="NEWS" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="113,10,87,0" Foreground="Gray" FontSize="24" Height="42" Width="142" FontFamily="Viner Hand ITC" FontWeight="Bold"/>
+
+
+    </Grid>
+</Window>
