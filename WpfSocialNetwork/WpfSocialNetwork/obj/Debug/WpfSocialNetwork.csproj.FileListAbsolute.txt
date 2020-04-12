@@ -47,7 +47,13 @@ C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\G
 C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\General.baml
 C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\Profile.g.cs
 C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\Profile.baml
-C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\News.g.cs
 C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\SearchUser.g.cs
-C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\News.baml
 C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\SearchUser.baml
+C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\ChangePassword.g.cs
+C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\ChangePassword.baml
+C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\ChangePost.g.cs
+C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\ChangePost.baml
+C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\NewComment.g.cs
+C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\ViewComments.g.cs
+C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\NewComment.baml
+C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\obj\Debug\ViewComments.baml

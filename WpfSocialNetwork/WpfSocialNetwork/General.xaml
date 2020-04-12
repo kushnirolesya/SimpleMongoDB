@@ -16,9 +16,8 @@
         </Grid.Background>
 
         <Button Content="My profile" HorizontalAlignment="Left" Margin="86,155,0,0" VerticalAlignment="Top" Width="176" Height="41" Click="MyProfile" Background="#FFFFB93F" FontFamily="Viner Hand ITC" FontSize="18"/>
-        <Button Content="News" HorizontalAlignment="Left" Margin="86,240,0,0" VerticalAlignment="Top" Width="176" Height="41" Click="News" Background="#FFFFB93F" FontFamily="Viner Hand ITC" FontSize="18"/>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="86,326,0,0" VerticalAlignment="Top" Width="176" Height="42" Click="Search" Background="#FFFFB93F" FontFamily="Viner Hand ITC" FontSize="18"/>
-        <Button Content="Change password" HorizontalAlignment="Left" Margin="86,407,0,0" VerticalAlignment="Top" Width="176" Height="42" Click="ChangePassword" RenderTransformOrigin="-2.562,4.114" Background="#FFFFB93F" FontFamily="Viner Hand ITC" FontSize="18"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="86,246,0,0" VerticalAlignment="Top" Width="176" Height="42" Click="Search" Background="#FFFFB93F" FontFamily="Viner Hand ITC" FontSize="18"/>
+        <Button Content="Change password" HorizontalAlignment="Left" Margin="86,327,0,0" VerticalAlignment="Top" Width="176" Height="42" Click="ChangePassword" RenderTransformOrigin="-2.562,4.114" Background="#FFFFB93F" FontFamily="Viner Hand ITC" FontSize="18"/>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Width="60" Height="29" Click="Exit" FontFamily="Viner Hand ITC" Background="#FFFFB93F"/>
 
     </Grid>

@@ -21,7 +21,7 @@
         <Label Content="Confirm" HorizontalAlignment="Left" Margin="32,350,0,0" VerticalAlignment="Top" Height="42" Width="120" FontSize="18" FontWeight="Bold" FontFamily="Viner Hand ITC"/>
 
         <TextBox x:Name="Username" HorizontalAlignment="Left" Margin="157,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="133" Background="#FFFFD975" FontFamily="Viner Hand ITC" FontSize="18"/>
-        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="158,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="133" Background="#FFFFD975" FontFamily="Tahoma" FontSize="18"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="158,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="133" Background="#FFFFD975" FontFamily="Viner Hand ITC" FontSize="18"/>
         <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="158,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="42" Width="133" Background="#FFFFD975" FontFamily="Viner Hand ITC" FontSize="18"/>
         <PasswordBox x:Name="ConfirmPassword" HorizontalAlignment="Left" Margin="158,350,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="42" Width="133" Background="#FFFFD975" FontFamily="Viner Hand ITC" FontSize="18"/>
         <Button Content="Register" HorizontalAlignment="Left" Margin="112,468,0,0" VerticalAlignment="Top" Width="104" Height="35" Click="Confirm" FontFamily="Viner Hand ITC" Background="#FFFFB93F" />

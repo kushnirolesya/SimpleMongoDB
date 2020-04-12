@@ -1,7 +1,4 @@
-﻿using Model;
-using Service;
-using System.Collections.Generic;
-using System.Windows;
+﻿using System.Windows;
 
 namespace WpfSocialNetwork
 {
@@ -45,22 +42,18 @@ namespace WpfSocialNetwork
 
         private void ChangePassword(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void News(object sender, RoutedEventArgs e)
-        {
-            News news = new News()
+            ChangePassword changePassword = new ChangePassword(loginUsername)
             {
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
-            news.Show();
+            changePassword.Show();
             Close();
+
         }
 
         private void Exit(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

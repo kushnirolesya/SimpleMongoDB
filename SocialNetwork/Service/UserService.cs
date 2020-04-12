@@ -37,10 +37,22 @@ namespace Service
         }
 
 
+        public bool UpdatePassword(string username, string oldpasssword, string newpassword)
+        {
+            if (CheckPassword(username, oldpasssword))
+            {
+                repository.UpdateField(username, "Password", GetHashStringSHA256(newpassword));
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
 
         public bool CheckPassword(string nickname, string password)
         {
-
             User user = new User();
             user = repository.GetUser(nickname);
             if (user != null)
@@ -123,9 +135,7 @@ namespace Service
                 {
                     user = (Remember)jsonFormatter.ReadObject(fs);
                 }
-
             }
-
             return user.Nickname;
         }
 

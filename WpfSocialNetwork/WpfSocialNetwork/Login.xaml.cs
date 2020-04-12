@@ -19,7 +19,7 @@ namespace WpfSocialNetwork
 
         private void Exit(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void LogIn(object sender, RoutedEventArgs e)
@@ -33,23 +33,22 @@ namespace WpfSocialNetwork
                     WindowStartupLocation = WindowStartupLocation.CenterScreen
                 };
                 general.Show();
-                this.Close();
+                Close();
             }
             else
             {
-                //message window = new message("Incorect password");
-                //window.Show();
+                MessageBox.Show("Incorect password");
             }
         }
 
         private void Register(object sender, RoutedEventArgs e)
         {
-            Close();
             Registration registration = new Registration()
             {
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
             registration.Show();
+            Close();
         }
     }
 }

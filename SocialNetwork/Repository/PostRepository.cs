@@ -17,7 +17,7 @@ namespace Repository
         {
             database = Connectionstr.GetDefaultDatabase();
             collection = database.GetCollection<Post>(GetTableName());
-        }
+         }
 
         private string GetTableName()
         {
@@ -58,11 +58,11 @@ namespace Repository
 
 
 
-        public List<Comment> GetComments(ObjectId id)
+        public List<string> GetComments(ObjectId id)
         {
             var filter = Builders<Post>.Filter.Eq("_id", id);
-            var users = collection.Find(filter).Project(x => x.PostComments).First();
-            return users;
+            var comments = collection.Find(filter).Project(x => x.PostComments).First();
+            return comments;
         }
 
 
@@ -76,7 +76,7 @@ namespace Repository
         public List<Post> GetNewPosts(DateTime lastLogin, List<ObjectId> following)
         {
             var filter = Builders<Post>.Filter.Gte("Time", lastLogin);
-            filter = filter & Builders<Post>.Filter.In("PostOwner", following);    //post_writer
+            filter = filter & Builders<Post>.Filter.In("PostOwner", following);  
             var posts = collection.Find(filter).ToList();
             return posts;
         }
@@ -87,7 +87,7 @@ namespace Repository
         public void AddComment(Comment comment, ObjectId id)
         {
             var filter = Builders<Post>.Filter.Eq("_id", id);
-            var update = Builders<Post>.Update.Push("Comments", comment);    //coments_to_post
+            var update = Builders<Post>.Update.Push("Comments", comment);   
             collection.UpdateOne(filter, update);
         }
 

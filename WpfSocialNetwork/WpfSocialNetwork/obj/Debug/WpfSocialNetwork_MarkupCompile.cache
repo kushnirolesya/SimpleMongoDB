@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Home\Desktop\univer\mongo\WpfSocialNetwork\WpfSocialNetwork\App.xaml
-6-2130402676
+91345525283
 
-10-1349277090
+13-898233484
 701290380694
-General.xaml;Login.xaml;News.xaml;Profile.xaml;Registration.xaml;SearchUser.xaml;
+NewComment.xaml;ChangePost.xaml;ChangePassword.xaml;General.xaml;Login.xaml;Profile.xaml;Registration.xaml;SearchUser.xaml;ViewComments.xaml;
 
 False
 

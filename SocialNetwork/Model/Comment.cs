@@ -23,4 +23,5 @@ namespace Model
         [BsonIgnoreIfNull]
         public DateTime Time { get; set; }
     }
+
 }

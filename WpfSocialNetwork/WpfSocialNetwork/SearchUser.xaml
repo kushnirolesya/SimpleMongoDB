@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfSocialNetwork"
         mc:Ignorable="d"
-        Title="SearchUser" Height="600" Width="350">
+        Title="SearchUser" Height="200" Width="350">
     <Grid>
 
         <Grid.Background>
@@ -16,8 +16,8 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <TextBox Name="searchUser" HorizontalAlignment="Left" Height="37" Margin="59,225,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="223" Background="#FFFFD975" FontFamily="Viner Hand ITC" FontSize="16"/>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="122,292,0,0" VerticalAlignment="Top" Width="100" Height="44" Click="Search" RenderTransformOrigin="0.276,0.427" FontFamily="Viner Hand ITC" FontSize="14" Background="#FFFFB93F"/>
+        <TextBox Name="searchUser" HorizontalAlignment="Left" Height="38" Margin="46,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222" Background="#FFFFD975" FontFamily="Viner Hand ITC" FontSize="16"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="112,115,0,0" VerticalAlignment="Top" Width="100" Height="44" Click="Search" RenderTransformOrigin="0.276,0.427" FontFamily="Viner Hand ITC" FontSize="14" Background="#FFFFB93F"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Width="60" Height="29" Click="Back" FontFamily="Viner Hand ITC" Background="#FFFFB93F"/>
 
     </Grid>

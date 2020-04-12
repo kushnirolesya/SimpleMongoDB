@@ -21,11 +21,12 @@ namespace Service
             userRepository = new UserRepository();
         }
 
-        public void InsertPost(string text)
+        public void InsertPost(string text, string username)
         {
             Post post = new Post();
             post.Text = text;
-            post.PostOwner = userRepository.GetId(userServices.NicknameRead());
+            //post.PostOwner = userRepository.GetId(userServices.NicknameRead());
+            post.PostOwner = userRepository.GetId(username);
             post.Time = DateTime.Now;
             repository.Add(post);
         }
@@ -57,12 +58,12 @@ namespace Service
         }
 
 
-        public bool AddComment(string text, ObjectId postId)
+        public bool AddComment(string text, ObjectId postId, User user)
         {
 
             Comment comment = new Comment();
             comment.Text = text;
-            comment.CommentOwner = userRepository.GetUser(userServices.NicknameRead()).Id;
+            comment.CommentOwner = user.Id;
             comment.Time = DateTime.Now;
             try
             {
@@ -123,7 +124,6 @@ namespace Service
             {
                 return posts;
             }
-
         }
 
         public Post GetPost(ObjectId postId)
@@ -141,12 +141,19 @@ namespace Service
 
         }
 
+        public List<Comment> GetPostsComment(ObjectId postId)
+        {
+            List<Comment> comments = new List<Comment>();
+            comments = repository.GetComments(postId);
+            return comments;
+        }
+
         public List<string> GetPersonWhoComment(ObjectId postId)
         {
             List<Comment> comments = new List<Comment>();
             try
             {
-                comments = repository.GetComments(postId);
+                comments = repository.GetComments(postId);                
                 if (comments != null)
                 {
                     List<string> res = new List<string>();

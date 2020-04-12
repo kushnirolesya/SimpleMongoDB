@@ -28,36 +28,32 @@ namespace WpfSocialNetwork
                         {
                             service.InsertUser(Username.Text, Email.Text, Password.Password.ToString());
                             service.NicknameWrite(Username.Text);
-                            Close();
                             General general = new General(Username.Text)
                             {
                                 WindowStartupLocation = WindowStartupLocation.CenterScreen
                             };
                             general.Show();
+                            Close();
                         }
                         catch
                         {
-                            //message message = new message("error");
-                            //message.Show();
+                            MessageBox.Show("Smth bad happened");
                         }
                     }
                     else
                     {
-                        //message message = new message("passwords don't match ");
-                        //message.Show();
+                        MessageBox.Show("Incorrect confirm password");
                     }
                 }
                 else
                 {
-                    //message message = new message("nick is already used");
-                    //message.Show();
+                    MessageBox.Show("Such username already exists");
                 }
 
             }
             else
             {
-                //message message = new message("fill all fields");
-                //message.Show();
+                MessageBox.Show("Please, fill all fields");
             }
         }
 
