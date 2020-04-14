@@ -1,0 +1,83 @@
+password for all users = "qwerty"
+
+
+Users:
+
+{"_id" : ObjectId("5e7dd732be46251cf0980426"),
+"Nickname":"okushnir",
+"Email":"okushnir@gmail.com",
+"Password":"10123275227535025112076721815011724923924316613017811310419223411675442451422243555197",
+"Followers":[null],
+"Following" : [null]}
+
+
+{
+"_id" : ObjectId("5e7f27a8be46253104a8ffcf"),
+"Nickname": "mfina",
+"Email": "mfina@gmail.com",
+
+"Password": "10123275227535025112076721815011724923924316613017811310419223411675442451422243555197",
+ 
+"Followers": [null]
+,
+"Following" : [null]}
+
+
+{
+
+"_id" : ObjectId("5e91fe5abe462532848a31c7"),
+"Nickname": "nmazurak",
+
+"Email": "nmazurak@gmail.com",
+"Password": "10123275227535025112076721815011724923924316613017811310419223411675442451422243555197",
+
+"Followers": [null],
+"Following" : [null]}
+
+
+{"_id" : ObjectId("5e9305fabe46252db014e336"),
+"Nickname":"nkushnir",
+"Email":"nkushnir@gmail.com",
+"Password":"10123275227535025112076721815011724923924316613017811310419223411675442451422243555197",
+"Followers": [null],
+"Following" : [null]}
+
+
+Posts:
+
+{"_id":ObjectId("5e91feb3be46253844be83e0"),
+"PostOwner": ObjectId("5e91fe5abe462532848a31c7"),
+"Text":"me and my new house",
+"Time":"2020-04-11T17:30:27.933+00:00",
+"Comments":[
+	{"CommentOwner": ObjectId("5e7dd732be46251cf0980426"),
+	"Text":"new comment added",
+	"Time" : "2020-04-12T11:12:39.013+00:00"
+]}
+
+
+{"_id":ObjectId("5e91ffa6be46253680c7e9ef"),
+"PostOwner": ObjectId("5e91fe5abe462532848a31c7"),
+"Text":"second",
+"Time":"2020-04-11T17:34:30.261+00:00"}
+
+
+{"_id":ObjectId("5e91e47fbe46254cfc0873d4"),
+"PostOwner": ObjectId("5e7dd732be46251cf0980426"),
+"Text":"my first post",
+"Time":"2020-04-11T15:38:39.135+00:00",
+"Comments":[
+	{"CommentOwner": ObjectId("5e7dd732be46251cf0980426"),
+	"Text":"cool",
+	"Time" : "2020-04-11T16:06:30.997+00:00"},
+
+	{"CommentOwner": ObjectId("5e91fe5abe462532848a31c7"),
+	"Text":"fantastic",
+	"Time" : "2020-04-11T17:34:59.699+00:00"}
+]}
+
+
+{"_id":ObjectId("5e91c157be4625451087cf20"),
+"PostOwner": ObjectId("5e7f27a8be46253104a8ffcf"),
+"Text":"coronavirus",
+"Time":"2020-04-11T13:08:39.265+00:00"}
