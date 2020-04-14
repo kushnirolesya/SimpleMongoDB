@@ -58,7 +58,7 @@ namespace Repository
 
 
 
-        public List<string> GetComments(ObjectId id)
+        public List<Comments> GetComments(ObjectId id)
         {
             var filter = Builders<Post>.Filter.Eq("_id", id);
             var comments = collection.Find(filter).Project(x => x.PostComments).First();
